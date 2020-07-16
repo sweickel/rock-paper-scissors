@@ -21,7 +21,7 @@ function game() {
 
 	//each round of play
 	function roundPlay(playerSelection, computerSelection) {
-		console.log(playerSelection,computerSelection);
+		console.log(`You chose ${playerSelection} and NPC chose ${computerSelection}`);
 		if (playerSelection === computerSelection) {
 			console.log("This round is a draw."); 
 			} else if (playerSelection === "Rock" && computerSelection === "Scissors" || playerSelection === "Scissors" && computerSelection === "Paper" || playerSelection === "Paper" && computerSelection === "Rock") {
@@ -35,6 +35,7 @@ function game() {
 		player = "";
 		computer = "";
 		console.log(`Current Score   You: ${playerScore} , NPC: ${npcScore}`);
+		console.log('------------------------')
 		checkWinner();
 	}
 

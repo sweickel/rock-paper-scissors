@@ -3,10 +3,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-.btn-wrapper {
-	display: flex;	
+	background-color: beige;
+	font-family: helvetica, sansserif;
 }
 
 .global-score {
@@ -20,4 +18,34 @@ body {
 	margin: 50px;
 	align-items: center;
 	justify-content: center;
+	background-color: white;
+	height: auto;
+	width: 100px;
+	border: 2px solid black;
 }
+
+.btn-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-wrapper button {
+	position: relative;
+	width: 175px;
+	height: 175px;
+	margin: 50px;
+	background-color: teal;
+	box-shadow: 1px 1px 2px black;
+	border: 3px solid black;
+}
+
+.btn-wrapper button:hover {
+	border: 3px solid yellow;
+}
+
+.btn-wrapper img {
+	height: 150px;
+	width: auto;
+}
+
